@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+div.main {
+    margin: 50px;
+}
+
+div.ftitle {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 100;
+    color: rgb(0 0 0 / 68%);
+}
+
+div.stitle {
+    color: rgba(3, 10, 54, 0.747);
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dscrb {
+    place-content: center;
+    display: flex;
+    white-space: break-spaces;
+    transform: scale(1) translate(-20px, -25px);
+    -webkit-transform: scale(1) translate(-20px, -25px);
+    -moz-transform: scale(1) translate(-20px, -25px);
+    -ms-transform: scale(1) translate(-20px, -25px);
+    -o-transform: scale(1) translate(-20px, -25px);
+}
+
+
+div.dscrb p {
+    text-align: center;
+    color: #000000b8;
+}
+
+
+.fboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+
+    background-color: white;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    height: 225px;
+
+}
+
+.sup {
+    align-self: center;
+}
+
+.card::Before {
+    content: "";
+    display: block;
+    width: 107%;
+    height: 8px;
+    border-radius: 8px 8px 0 0;
+    transform: translate(-10px, -10px);
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -ms-border-radius: 8px 8px 0 0;
+    -o-border-radius: 8px 8px 0 0;
+    -webkit-transform: translate(-10px, -10px);
+    -moz-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    -o-transform: translate(-10px, -10px);
+}
+
+
+.card.sup::before {
+    background-color: #45d3d3;
+}
+
+
+.card.team::before {
+    background-color: #ea5353;
+}
+
+.card.karma::before {
+    background-color: #fcaf4a;
+}
+
+.card.cal::before {
+    background-color: #549ef2;
+}
+
+
+.cal {
+    align-self: center;
+}
+
+.karma {
+    order: 4;
+
+}
+
+
+.card h2 {
+    margin: 15px;
+    padding: 10px;
+}
+
+.card p {
+    margin: 15px;
+    padding: 10px;
+}
+
+.card img {
+    display: inline-block;
+    position: relative;
+    left: 210px;
+    top: -20px;
+}
+
+.centerit {
+    text-align: center;
+}
+
+
+a:hover {
+    color: #00b6ff;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: system-ui;
+    transition-timing-function: linear;
+}
+
+@media (max-width:700px) {
+
+    div.main {
+        margin: 10px;
+    }
+
+    div.stitle {
+        font-size: 9px;
+    }
+
+    div.ftitle {
+        font-size: 20px;
+    }
+
+    .fboxes {
+        display: grid;
+        justify-content: center;
+    }
+
+    .dscrb {
+        white-space: initial;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
+
+}
+
+@media (Min-width:701px) and (max-width:1076px) {
+    .fboxes {
+        display: grid;
+        justify-content: center;
+    }
+}
